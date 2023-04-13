@@ -2,7 +2,7 @@ package vista;
 
 import javax.swing.*;
 
-public class VentanaAlumno {
+public class VentanaAlumno extends JFrame{
     private JPanel panel1;
     private JPanel panelCentro;
     private JPanel panelSur;
@@ -13,4 +13,13 @@ public class VentanaAlumno {
     public JButton btnSalir;
     public JTextField jtxNombre;
     private JLabel lblNombre;
+
+    public VentanaAlumno(){
+        setTitle("Alta Alumno");
+        setContentPane(panel1);
+        setSize(500,140);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }
 }
