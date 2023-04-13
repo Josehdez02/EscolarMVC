@@ -1,7 +1,9 @@
 package controlador;
 
 import modelo.ModeloAlumno;
+import modelo.ModeloCatedratico;
 import vista.VentanaAlumno;
+import vista.VentanaCatedratico;
 import vista.VentanaPrincipal;
 
 import javax.swing.*;
@@ -28,7 +30,11 @@ public class ControladorVentanaPrincipal implements ActionListener {
             VentanaAlumno v2=new VentanaAlumno();
             ModeloAlumno m1=new ModeloAlumno();
             ControladorAlumno c2=new ControladorAlumno(m1,v2);
-
+        }else if(opcion.equals("Alta Catedratico")) {
+            VentanaCatedratico vc=new VentanaCatedratico();
+            ModeloCatedratico mc=new ModeloCatedratico();
+            ControladorCatedratico cc=new ControladorCatedratico(mc,vc);
+         }
         }
     }
-}
+
