@@ -36,7 +36,7 @@ public class ControladorMateria implements ActionListener {
 
     public void clear () {
         visionMateria.jtxID.setText("");
-        visionMateria.jtxID.setText("");
+        visionMateria.jtxMateria.setText("");
     }
 
     public void Salir () {
