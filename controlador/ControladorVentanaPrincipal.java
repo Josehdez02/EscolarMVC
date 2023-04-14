@@ -1,11 +1,9 @@
 package controlador;
-import vista.VentanaEspecialidad;
+import vista.*;
 import modelo.ModeloEspecialidad;
 import modelo.ModeloAlumno;
 import modelo.ModeloCatedratico;
-import vista.VentanaAlumno;
-import vista.VentanaCatedratico;
-import vista.VentanaPrincipal;
+import modelo.ModeloGrupo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -39,6 +37,10 @@ public class ControladorVentanaPrincipal implements ActionListener {
             VentanaEspecialidad ve = new VentanaEspecialidad();
             ModeloEspecialidad me = new ModeloEspecialidad();
             ControladorEspecialidad ce = new ControladorEspecialidad(me, ve);
-         }
+         }else if (opcion.equals("Alta Grupo")) {
+            VentanaGrupo vg = new VentanaGrupo();
+            ModeloGrupo mg = new ModeloGrupo();
+            ControladorGrupo cg = new ControladorGrupo(mg, vg);
+        }
         }
     }
