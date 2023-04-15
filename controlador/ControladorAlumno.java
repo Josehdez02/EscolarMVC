@@ -24,14 +24,15 @@ public class ControladorAlumno implements ActionListener{
     @Override
     public void actionPerformed (ActionEvent e){
         if (visionAlumno.btnGuardar == e.getSource()) {
+
             System.out.println("Nombre: " + visionAlumno.jtxNombre.getText() + " Número de Control:" + Integer.parseInt(visionAlumno.jtxNumControl.getText())+"Especialidad: "+visionEspecialidad.jtxEspecialidad.getText());
+
             JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             clear();
         } else if (visionAlumno.btnSalir == e.getSource()) {
             Salir();
         }
     }
-
 
     public void clear () {
         visionAlumno.jtxNombre.setText("");

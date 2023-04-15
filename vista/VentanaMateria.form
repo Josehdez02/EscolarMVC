@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="vista.VentanaMateria">
+  <grid id="27dc6" binding="panel1" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="77de9" binding="panelNorte" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a83d0" class="javax.swing.JLabel" binding="lblMateria">
+            <constraints/>
+            <properties>
+              <text value="Materia"/>
+            </properties>
+          </component>
+          <component id="136bf" class="javax.swing.JTextField" binding="jtxMateria">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9ce16" binding="panelSur" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1befa" class="javax.swing.JButton" binding="btnGuardar">
+            <constraints/>
+            <properties>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+          <component id="1614d" class="javax.swing.JButton" binding="btnSalir">
+            <constraints/>
+            <properties>
+              <text value="Salir"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="683c3" binding="panelCentro" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5418d" class="javax.swing.JLabel" binding="lblID">
+            <constraints/>
+            <properties>
+              <text value="ID"/>
+            </properties>
+          </component>
+          <component id="e6b3a" class="javax.swing.JTextField" binding="jtxID">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
