@@ -3,12 +3,15 @@ package modelo;
 public class ModeloAlumno {
     private int numControl;
     private String nombre;
+    private ModeloEspecialidad modeloEspecialidad;
 
     public ModeloAlumno(){}
 
-    public ModeloAlumno(int numControl, String nombre){
+
+    public ModeloAlumno(int numControl, String nombre, ModeloEspecialidad modeloEspecialidad){
         this.numControl=numControl;
         this.nombre=nombre;
+        this.modeloEspecialidad=modeloEspecialidad;
     }
 
     public String getNombre() {
@@ -27,13 +30,23 @@ public class ModeloAlumno {
         this.numControl = numControl;
     }
 
+    public ModeloEspecialidad getModeloEspecialidad() {
+        return modeloEspecialidad;
+    }
+
+    public void setModeloEspecialidad(ModeloEspecialidad modeloEspecialidad) {
+        this.modeloEspecialidad = modeloEspecialidad;
+    }
+
     @Override
     public String toString() {
         return "ModeloAlumno{" +
                 "numControl=" + numControl +
                 ", nombre='" + nombre + '\'' +
+                ", Especialidad=" + modeloEspecialidad +
                 '}';
     }
+
     public void imprmir(){
         System.out.println(toString());
     }

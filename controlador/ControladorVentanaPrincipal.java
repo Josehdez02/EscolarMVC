@@ -1,11 +1,8 @@
 package controlador;
-import vista.VentanaEspecialidad;
+import vista.*;
 import modelo.ModeloEspecialidad;
 import modelo.ModeloAlumno;
 import modelo.ModeloCatedratico;
-import vista.VentanaAlumno;
-import vista.VentanaCatedratico;
-import vista.VentanaPrincipal;
 
 import javax.swing.*;
 import java.awt.*;
@@ -40,8 +37,12 @@ public class ControladorVentanaPrincipal implements ActionListener {
             VentanaEspecialidad ve = new VentanaEspecialidad();
             ModeloEspecialidad me = new ModeloEspecialidad();
             ControladorEspecialidad ce = new ControladorEspecialidad(me, ve);
-         }
+         } else if (opcion.equals("Imprimir BD")) {
+            VentanaBD bd=new VentanaBD();
+            ControladorReporte cr=new ControladorReporte();
+
         }
+    }
 
    /* public void actionPerformed(ActionEvent e) {
         // Verificar qué botón ha sido presionado

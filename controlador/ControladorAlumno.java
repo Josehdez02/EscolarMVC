@@ -4,12 +4,12 @@ import modelo.ModeloAlumno;
 import vista.VentanaAlumno;
 import vista.VentanaPrincipal;
 
-import javax.sound.sampled.EnumControl;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ControladorAlumno implements ActionListener{
+
     private final ModeloAlumno modeloAlumno;
     private final VentanaAlumno visionAlumno;
 
@@ -25,16 +25,11 @@ public class ControladorAlumno implements ActionListener{
     public void actionPerformed (ActionEvent e){
         if (visionAlumno.btnGuardar == e.getSource()) {
             System.out.println("Nombre: " + visionAlumno.jtxNombre.getText() + " \nNúmero de Control:" + Integer.parseInt(visionAlumno.jtxNumControl.getText()));
-            JOptionPane.showMessageDialog(null, "Registro Guardado con Exito", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             clear();
-
         } else if (visionAlumno.btnSalir == e.getSource()) {
             Salir();
         }
-    }
-
-    private static void addElement(ControladorAlumno controladorAlumno) {
-
     }
 
     public void clear () {

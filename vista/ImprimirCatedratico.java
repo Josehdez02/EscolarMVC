@@ -11,11 +11,11 @@ public class ImprimirCatedratico extends JFrame {
     private JTable TablaAlum;
 
     public ImprimirCatedratico() {
-        super();
+        super("Catedraticos");
         setContentPane(panel1);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 500);
-        Arreglos.catedratico.add(new ModeloCatedratico( "8548",  "Senen"));
+        Arreglos.catedratico.add(new ModeloCatedratico("22","jose"));
 
         DefaultTableModel dtm = new DefaultTableModel(
                 Arreglos.catedratico.stream()
@@ -30,5 +30,7 @@ public class ImprimirCatedratico extends JFrame {
                 return false;
             }
         };
+        TablaAlum.setModel(dtm);
+        setVisible(true);
     }
 }

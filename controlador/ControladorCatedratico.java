@@ -35,12 +35,12 @@ public class ControladorCatedratico implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         String msg = "";
-        for (ControladorCatedratico fila : Arreglos.catedratico) {
-            msg += fila.modeloCatedratico.getRFC();
-            msg += " ";
-            msg += fila.modeloCatedratico.getNombre();
-            msg += "\n";
-        }
+        //for (ControladorCatedratico fila : Arreglos.catedratico) {
+          //  msg += fila.modeloCatedratico.getRFC();
+            //msg += " ";
+           // msg += fila.modeloCatedratico.getNombre();
+           // msg += "\n";
+       // }
     }
 
     public void clear () {
