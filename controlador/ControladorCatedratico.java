@@ -1,5 +1,6 @@
 package controlador;
 
+import arreglos.Arreglos;
 import modelo.ModeloCatedratico;
 import vista.VentanaCatedratico;
 import vista.VentanaPrincipal;
@@ -8,7 +9,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ControladorCatedratico implements ActionListener{
+public class ControladorCatedratico implements ActionListener {
 
     private final ModeloCatedratico modeloCatedratico;
     private final VentanaCatedratico vistaCatedratico;
@@ -22,13 +23,23 @@ public class ControladorCatedratico implements ActionListener{
     }
 
     @Override
-    public void actionPerformed (ActionEvent e){
+    /*public void actionPerformed (ActionEvent e){
         if (vistaCatedratico.btnGuardar == e.getSource()) { // quite Integer.parseInt --------v
             System.out.println("Nombre: " + vistaCatedratico.jtxNombre.getText() + " \nRFC:" + (vistaCatedratico.jtxRFC.getText()));
             JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             clear();
         } else if (vistaCatedratico.btnSalir == e.getSource()) {
             Salir();
+        }
+    }*/
+
+    public void actionPerformed(ActionEvent e) {
+        String msg = "";
+        for (ControladorCatedratico fila : Arreglos.catedratico) {
+            msg += fila.modeloCatedratico.getRFC();
+            msg += " ";
+            msg += fila.modeloCatedratico.getNombre();
+            msg += "\n";
         }
     }
 

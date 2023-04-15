@@ -3,10 +3,10 @@ package vista;
 import javax.swing.*;
 
 public class VentanaCatedratico extends JFrame{
-    private JPanel panel1;
-    private JPanel panelCentro;
-    private JPanel panelSur;
-    private JPanel panelNorte;
+    public JPanel panel1;
+    public JPanel panelCentro;
+    public JPanel panelSur;
+    public JPanel panelNorte;
     public JTextField jtxRFC;
     public JLabel lblRFC;
     public JButton btnGuardar;

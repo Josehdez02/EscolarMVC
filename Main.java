@@ -4,6 +4,7 @@ import modelo.ModeloAlumno;
 import vista.*;
 public class Main {
     public static void main(String[] args) {
+        //ImprimirCatedratico ic= new ImprimirCatedratico();
         VentanaPrincipal v1=new VentanaPrincipal();
         ControladorVentanaPrincipal c1=new ControladorVentanaPrincipal(v1);
         //VentanaAlumno v2=new VentanaAlumno();

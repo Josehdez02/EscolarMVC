@@ -11,6 +11,8 @@ public class VentanaPrincipal extends JFrame{
     public JButton btnAceptar;
     public JComboBox cbxAltas;
     public JLabel lblOpcion;
+    public JButton btnImprimir;
+
     public VentanaPrincipal() {
         setTitle("Ventana Principal");
         setContentPane(panelPrincipal);

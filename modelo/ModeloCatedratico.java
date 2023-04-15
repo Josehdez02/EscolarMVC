@@ -1,8 +1,8 @@
 package modelo;
 
 public class ModeloCatedratico {
-    private String RFC;
-    private String nombre;
+    public static String RFC;
+    public static String nombre;
 
     public ModeloCatedratico(){}
 
@@ -11,7 +11,7 @@ public class ModeloCatedratico {
         this.nombre=nombre;
     }
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 
@@ -19,13 +19,14 @@ public class ModeloCatedratico {
         this.nombre = nombre;
     }
 
-    public String getRFC() {
+    public static String getRFC() {
         return RFC;
     }
 
     public void setRFC(String RFC) {
         this.RFC = RFC;
     }
+
 
     @Override
     public String toString() {

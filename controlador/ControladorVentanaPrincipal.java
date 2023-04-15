@@ -8,10 +8,12 @@ import vista.VentanaCatedratico;
 import vista.VentanaPrincipal;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ControladorVentanaPrincipal implements ActionListener {
+
 
     private final VentanaPrincipal ventanaPrincipal;
 
@@ -20,7 +22,6 @@ public class ControladorVentanaPrincipal implements ActionListener {
 
         this.ventanaPrincipal.btnAceptar.addActionListener(this);
     }
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -41,4 +42,33 @@ public class ControladorVentanaPrincipal implements ActionListener {
             ControladorEspecialidad ce = new ControladorEspecialidad(me, ve);
          }
         }
+
+   /* public void actionPerformed(ActionEvent e) {
+        // Verificar qué botón ha sido presionado
+        if (e.getSource() == btnImprimir) {
+            // Guardar los datos del alumno en el vector
+            alumnos[contadorAlumnos][0] = .getText();
+            alumnos[contadorAlumnos][1] = String.valueOf(m1.getNumControl());
+            //alumnos[contadorAlumnos][2] = txtEspecialidad.getText();
+            contadorAlumnos++;
+
+            // Limpiar los campos de texto
+            txtNombre.setText("");
+            txtNumControl.setText("");
+            txtEspecialidad.setText("");
+
+            // Mostrar un mensaje de confirmación
+            JOptionPane.showMessageDialog(this, "Alumno guardado");
+        } else if (e.getSource() == btnReporte) {
+            // Imprimir todos los datos de los alumnos guardados en el vector
+            String reporte = "";
+            for (int i = 0; i < contadorAlumnos; i++) {
+                reporte += "Nombre: " + alumnos[i][0] + "\n";
+                reporte += "Número de control: " + alumnos[i][1] + "\n";
+                reporte += "Especialidad: " + alumnos[i][2] + "\n";
+                reporte += "\n";
+            }
+            JOptionPane.showMessageDialog(this, reporte);
+        }*/
+
     }
