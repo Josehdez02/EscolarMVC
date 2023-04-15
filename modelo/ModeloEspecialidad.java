@@ -29,7 +29,7 @@ public class ModeloEspecialidad{
 
     @Override
     public String toString() {
-        return "ModeloEspecialidad{" +
+        return "Especialidad{" +
                 "ID=" + ID +
                 ", nombre='" + nombre + '\'' +
                 '}';

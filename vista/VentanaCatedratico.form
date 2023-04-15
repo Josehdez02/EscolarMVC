@@ -15,7 +15,7 @@
           <component id="1e760" class="javax.swing.JLabel" binding="lblRFC">
             <constraints/>
             <properties>
-              <text value="RFC"/>
+              <text value="RFC:"/>
             </properties>
           </component>
           <component id="59c73" class="javax.swing.JTextField" binding="jtxRFC">
@@ -51,10 +51,10 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="903ff" class="javax.swing.JLabel" binding="lblNombre" custom-create="true">
+          <component id="66761" class="javax.swing.JLabel" binding="lblNombre">
             <constraints/>
             <properties>
-              <text value="Nombre"/>
+              <text value="Nombre: "/>
             </properties>
           </component>
           <component id="61ac2" class="javax.swing.JTextField" binding="jtxNombre">

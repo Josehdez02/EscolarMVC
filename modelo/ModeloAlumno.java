@@ -15,8 +15,12 @@ public class ModeloAlumno {
         return numControl;
     }
 
-    public void setNumControl(int numControl) {
-        this.numControl = numControl;
+
+
+    public ModeloAlumno(int numControl, String nombre, ModeloEspecialidad modeloEspecialidad){
+        this.numControl=numControl;
+        this.nombre=nombre;
+        this.modeloEspecialidad=modeloEspecialidad;
     }
 
     public String getNombre() {
@@ -35,12 +39,27 @@ public class ModeloAlumno {
         this.modeloEspecialidad = especialidad;
     }
 
-    @Override
-    public String toString() {
-        return "Alumno{" + "numControl=" + numControl + ", nombre='" + nombre + '\'' + ", especialidad=" + Modeloespecialidad + '}';
+    public ModeloEspecialidad getModeloEspecialidad() {
+        return modeloEspecialidad;
     }
 
+    public void setModeloEspecialidad(ModeloEspecialidad modeloEspecialidad) {
+        this.modeloEspecialidad = modeloEspecialidad;
+    }
+
+    @Override
+    public String toString() {
+
+        return "ModeloAlumno{" +
+                "numControl=" + numControl +
+                ", nombre='" + nombre + '\'' +
+                ", Especialidad=" + modeloEspecialidad +
+                '}';
+    }
+
+
     public void imprimir(){
+
         System.out.println(toString());
     }
 }

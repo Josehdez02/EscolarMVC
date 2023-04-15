@@ -1,5 +1,7 @@
 package controlador;
 
+import arreglos.Arreglos;
+import modelo.ModeloCatedratico;
 import modelo.ModeloEspecialidad;
 import vista.VentanaEspecialidad;
 import vista.VentanaPrincipal;
@@ -7,7 +9,7 @@ import vista.VentanaPrincipal;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class ControladorEspecialidad implements ActionListener{
+public class ControladorEspecialidad implements ActionListener {
     private final ModeloEspecialidad modeloEspecialidad;
     private final VentanaEspecialidad visionEspecialidad;
 
@@ -31,14 +33,15 @@ public class ControladorEspecialidad implements ActionListener{
     }
 
 
-    public void clear () {
-        visionEspecialidad.jtxNombre.setText("");
-        visionEspecialidad.jtxID.setText("");
+        public void clear () {
+            visionEspecialidad.jtxNombre.setText("");
+            visionEspecialidad.jtxID.setText("");
+        }
+
+        public void Salir () {
+            System.exit(0);
+        }
     }
 
-    public void Salir () {
-        System.exit(0);
-    }
-}
 
 
