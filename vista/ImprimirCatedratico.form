@@ -12,7 +12,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="b7936" class="javax.swing.JTable" binding="TablaAlum">
+          <component id="b7936" class="javax.swing.JTable" binding="TablaCate">
             <constraints/>
             <properties/>
           </component>

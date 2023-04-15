@@ -1,21 +1,19 @@
 package vista;
 import arreglos.Arreglos;
-import controlador.ControladorCatedratico;
-import vista.VentanaCatedratico;
 import modelo.ModeloCatedratico;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 public class ImprimirCatedratico extends JFrame {
     private JPanel panel1;
-    private JTable TablaAlum;
+    private JTable TablaCate;
 
     public ImprimirCatedratico() {
         super("Catedraticos");
         setContentPane(panel1);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 500);
-        Arreglos.catedratico.add(new ModeloCatedratico("22","jose"));
+
 
         DefaultTableModel dtm = new DefaultTableModel(
                 Arreglos.catedratico.stream()
@@ -30,7 +28,7 @@ public class ImprimirCatedratico extends JFrame {
                 return false;
             }
         };
-        TablaAlum.setModel(dtm);
+        TablaCate.setModel(dtm);
         setVisible(true);
     }
 }

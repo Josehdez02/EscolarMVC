@@ -23,24 +23,23 @@ public class ControladorCatedratico implements ActionListener {
     }
 
     @Override
-    /*public void actionPerformed (ActionEvent e){
+    public void actionPerformed (ActionEvent e){
         if (vistaCatedratico.btnGuardar == e.getSource()) { // quite Integer.parseInt --------v
-            System.out.println("Nombre: " + vistaCatedratico.jtxNombre.getText() + " \nRFC:" + (vistaCatedratico.jtxRFC.getText()));
-            JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+            System.out.println("Nombre: " + vistaCatedratico.jtxNombre.getText()
+                    + " \nRFC:" + (vistaCatedratico.jtxRFC.getText()));
+            Arreglos.catedratico.add(new ModeloCatedratico(
+                    vistaCatedratico.jtxRFC.getText(),
+                    vistaCatedratico.jtxNombre.getText()
+            ));
+            JOptionPane.showMessageDialog(null,
+                    "Catedratico registrado con EXITO!",
+                    "AVISO",
+                    JOptionPane.INFORMATION_MESSAGE);
             clear();
         } else if (vistaCatedratico.btnSalir == e.getSource()) {
             Salir();
         }
-    }*/
 
-    public void actionPerformed(ActionEvent e) {
-        String msg = "";
-        for (ModeloCatedratico fila : Arreglos.catedratico) {
-            msg += fila.getRFC();
-            msg += " ";
-            msg += fila.getNombre();
-            msg += "\n";
-        }
     }
 
     public void clear () {

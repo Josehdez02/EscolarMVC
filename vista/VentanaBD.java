@@ -1,6 +1,5 @@
 package vista;
 
-import controlador.ArregloAlumnos;
 import modelo.ModeloAlumno;
 import modelo.ModeloEspecialidad;
 
