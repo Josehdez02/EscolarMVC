@@ -6,7 +6,7 @@ import vista.VentanaGrupo;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class ControladorGrupo implements ActionListener {
+public class  ControladorGrupo implements ActionListener {
 
     private final ModeloGrupo modeloGrupo;
     private final VentanaGrupo visionGrupo;
