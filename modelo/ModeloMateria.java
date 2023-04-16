@@ -2,8 +2,9 @@ package modelo;
 
 public class ModeloMateria {
 
-    private int id;
-    private String nombre;
+    private static String nombre;
+    private static int id;
+
 
     public ModeloMateria() {
     }
