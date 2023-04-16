@@ -31,6 +31,12 @@
               <text value="Aceptar"/>
             </properties>
           </component>
+          <component id="1702d" class="javax.swing.JButton" binding="btnImprimir">
+            <constraints/>
+            <properties>
+              <text value="Imprimir Reporte"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="6a85d" binding="panelCentro" layout-manager="BorderLayout" hgap="0" vgap="0">
@@ -54,6 +60,7 @@
                 <item value="Alta Grupo"/>
                 <item value="Alta Materia"/>
                 <item value="Alta Especialidad"/>
+                <item value="Imprimir BD"/>
               </model>
             </properties>
           </component>
