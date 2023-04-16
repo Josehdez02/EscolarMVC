@@ -5,7 +5,16 @@ public class ModeloAlumno {
     private String nombre;
     private ModeloEspecialidad modeloEspecialidad;
 
-    public ModeloAlumno(){}
+    public ModeloAlumno(int numControl, String nombre, ModeloEspecialidad modeloEspecialidad) {
+        this.numControl = numControl;
+        this.nombre = nombre;
+        this.modeloEspecialidad = modeloEspecialidad;
+    }
+
+    public int getNumControl() {
+        return numControl;
+    }
+
 
 
     public ModeloAlumno(int numControl, String nombre, ModeloEspecialidad modeloEspecialidad){
@@ -22,12 +31,12 @@ public class ModeloAlumno {
         this.nombre = nombre;
     }
 
-    public int getNumControl() {
-        return numControl;
+    public ModeloEspecialidad getModeloEspecialidad() {
+        return modeloEspecialidad;
     }
 
-    public void setNumControl(int numControl) {
-        this.numControl = numControl;
+    public void setEspecialidad(ModeloEspecialidad especialidad) {
+        this.modeloEspecialidad = especialidad;
     }
 
     public ModeloEspecialidad getModeloEspecialidad() {
@@ -40,6 +49,7 @@ public class ModeloAlumno {
 
     @Override
     public String toString() {
+
         return "ModeloAlumno{" +
                 "numControl=" + numControl +
                 ", nombre='" + nombre + '\'' +
@@ -47,7 +57,9 @@ public class ModeloAlumno {
                 '}';
     }
 
-    public void imprmir(){
+
+    public void imprimir(){
+
         System.out.println(toString());
     }
 }
