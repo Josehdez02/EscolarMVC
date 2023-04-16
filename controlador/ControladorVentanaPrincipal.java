@@ -1,4 +1,5 @@
 package controlador;
+import modelo.ModeloMateria;
 import vista.*;
 import modelo.ModeloEspecialidad;
 import modelo.ModeloAlumno;
@@ -43,6 +44,12 @@ public class ControladorVentanaPrincipal implements ActionListener {
                 VentanaEspecialidad ve = new VentanaEspecialidad();
                 ModeloEspecialidad me = new ModeloEspecialidad();
                 ControladorEspecialidad ce = new ControladorEspecialidad(me, ve);
+            }
+            else if (opcion.equals("Alta Materia")){
+                VentanaMateria vm = new VentanaMateria();
+                ModeloMateria mm = new ModeloMateria();
+                ControladorMateria cm = new ControladorMateria(mm,vm);
+
             }
             }
         }
