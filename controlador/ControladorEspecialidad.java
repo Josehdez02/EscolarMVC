@@ -30,7 +30,7 @@ public class ControladorEspecialidad implements ActionListener{
         }
     }
 
-
+//comentario//
     public void clear () {
         visionEspecialidad.jtxNombre.setText("");
         visionEspecialidad.jtxID.setText("");
