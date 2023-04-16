@@ -13,7 +13,7 @@ public class ModeloMateria {
         this.nombre = nombre;
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
@@ -21,7 +21,7 @@ public class ModeloMateria {
         this.id = id;
     }
 
-    public static String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
