@@ -1,6 +1,7 @@
 package controlador;
 
 
+import arreglos.Arreglos;
 import modelo.ModeloMateria;
 import vista.VentanaMateria;
 
@@ -25,12 +26,15 @@ public class ControladorMateria implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (visionMateria.btnGuardar == e.getSource()) {
             System.out.println("Materia: " + visionMateria.jtxMateria.getText() + " ID:" + Integer.parseInt(visionMateria.jtxID.getText()));
-            JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+
+                    JOptionPane.showMessageDialog(null,
+                            "Materia registrada con EXITO!",
+                            "AVISO",
+                            JOptionPane.INFORMATION_MESSAGE);
             clear();
         } else if (visionMateria.btnSalir == e.getSource()) {
             Salir();
         }
-
 
     }
 
