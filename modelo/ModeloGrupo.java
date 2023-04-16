@@ -13,7 +13,7 @@ public class ModeloGrupo {
         this.salon = salon;
     }
 
-    public int getClave() {
+    public static int getClave() {
         return clave;
     }
 

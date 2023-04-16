@@ -1,5 +1,6 @@
 package controlador;
 
+import arreglos.Arreglos;
 import modelo.ModeloGrupo;
 import vista.VentanaGrupo;
 
@@ -22,10 +23,21 @@ public class  ControladorGrupo implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (visionGrupo.btnGuardar == e.getSource()) {
-            System.out.println("Clave: " + Integer.parseInt(visionGrupo.jtxtClave.getText())
+            System.out.println("Clave: " + (visionGrupo.jtxtClave.getText())
                     + " Hora: " + visionGrupo.jtxtHora.getText() + " Salon: "
-                    + Integer.parseInt(visionGrupo.jtxtSalon.getText()));
-            JOptionPane.showMessageDialog(null, "Registro Guardado!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+                    + (visionGrupo.jtxtSalon.getText()));
+            Arreglos.grupo.add(new ModeloGrupo(
+                    visionGrupo.jtxtClave.getText(),
+                    visionGrupo.jtxtHora.getText(),
+                    visionGrupo.jtxtSalon.getText()
+
+                    ));
+
+
+            JOptionPane.showMessageDialog(null,
+                    "Registro Guardado!",
+                    "AVISO",
+                    JOptionPane.INFORMATION_MESSAGE);
             clear();
         } else if (visionGrupo.btnSalir == e.getSource()) {
             Salir();
