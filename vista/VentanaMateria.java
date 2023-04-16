@@ -25,4 +25,7 @@ public class VentanaMateria extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
+    void createUIComponents(){
+
+    }
 }
