@@ -32,4 +32,6 @@ public class ImprimirMateria extends JFrame{
         setVisible(true);
     }
 }
+//prueba
+
 
