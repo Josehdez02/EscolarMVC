@@ -62,6 +62,18 @@
               <columns value="30"/>
             </properties>
           </component>
+          <component id="10874" class="javax.swing.JLabel" binding="lblEspecialidad">
+            <constraints/>
+            <properties>
+              <text value="             Especialidad: "/>
+            </properties>
+          </component>
+          <component id="f8bcd" class="javax.swing.JTextField" binding="jtxEspecialidad">
+            <constraints/>
+            <properties>
+              <columns value="15"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

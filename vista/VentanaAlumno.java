@@ -12,7 +12,9 @@ public class VentanaAlumno extends JFrame{
     public JButton btnGuardar;
     public JButton btnSalir;
     public JTextField jtxNombre;
-    private JLabel lblNombre;
+    public JLabel lblNombre;
+    public JTextField jtxEspecialidad;
+    public JLabel lblEspecialidad;
 
     public VentanaAlumno(){
         setTitle("Alta Alumno");
