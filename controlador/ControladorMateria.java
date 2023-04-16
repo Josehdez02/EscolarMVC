@@ -26,9 +26,7 @@ public class ControladorMateria implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (visionMateria.btnGuardar == e.getSource()) {
             System.out.println("Materia: " + visionMateria.jtxMateria.getText() + " ID:" + Integer.parseInt(visionMateria.jtxID.getText()));
-            Arreglos.materia.add(new ModeloMateria(
-                    visionMateria.jtxMateria.getText(),
-                    visionMateria.jtxID.getText(),
+
                     JOptionPane.showMessageDialog(null,
                             "Materia registrada con EXITO!",
                             "AVISO",
